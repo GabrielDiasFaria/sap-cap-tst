@@ -1,0 +1,7 @@
+POST http://localhost:4004/odata/v4/blog/Posts
+Content-Type: application/json
+
+{
+  "title": "Segundo post",
+  "content": "Esse é o conteúdo do meu post 2"
+}
