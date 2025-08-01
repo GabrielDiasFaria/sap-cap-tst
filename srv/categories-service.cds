@@ -3,23 +3,16 @@ using cap.schema from '../db/schema';
 service categories {
 
     @UI: {
-        SelectionFields : [
-            name,
-            color
-        ],
+        SelectionFields : [name],
         LineItem        : [
-            {
-                Value: name,
-                Label: 'Nome'
-            },
             {
                 Value: icon,
                 Label: 'Ícone'
             },
             {
-                Value: color,
-                Label: 'Cor'
-            }
+                Value: name,
+                Label: 'Nome'
+            },
         ],
         Facets          : [{
             $Type : 'UI.ReferenceFacet',
@@ -34,10 +27,6 @@ service categories {
             {
                 Value: icon,
                 Label: 'Ícone'
-            },
-            {
-                Value: color,
-                Label: 'Cor'
             }
         ]}
     }
