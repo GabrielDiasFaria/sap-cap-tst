@@ -1,2 +1,2 @@
 
-using from './posts/annotations';
+using from './categories/annotations';

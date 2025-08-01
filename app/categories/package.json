@@ -1,7 +1,7 @@
 {
-    "name": "posts",
+    "name": "categories",
     "version": "0.0.1",
-    "description": "posts",
+    "description": "Categorias",
     "keywords": [
         "ui5",
         "openui5",

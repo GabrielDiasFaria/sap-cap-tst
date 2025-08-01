@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "pt.posts.posts",
+    "id": "pt.cap.categories.categories",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,11 +13,11 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.14.2",
-      "toolsId": "e8a15f96-9efe-420c-96c6-da756a1a1aa5"
+      "toolsId": "b02a5eca-b21a-4980-a571-36d34705a98e"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/blog/",
+        "uri": "/odata/v4/finance/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -61,7 +61,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "pt.posts.posts.i18n.i18n"
+          "bundleName": "pt.cap.categories.categories.i18n.i18n"
         }
       },
       "": {
@@ -86,49 +86,55 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "PostsList",
-          "target": "PostsList"
+          "name": "CategoriesList",
+          "target": "CategoriesList"
         },
         {
-          "pattern": "Posts({key}):?query:",
-          "name": "PostsObjectPage",
-          "target": "PostsObjectPage"
+          "pattern": "Categories({key}):?query:",
+          "name": "CategoriesObjectPage",
+          "target": "CategoriesObjectPage"
         }
       ],
       "targets": {
-        "PostsList": {
+        "CategoriesList": {
           "type": "Component",
-          "id": "PostsList",
+          "id": "CategoriesList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/Posts",
+              "contextPath": "/Categories",
               "variantManagement": "Page",
               "navigation": {
-                "Posts": {
+                "Categories": {
                   "detail": {
-                    "route": "PostsObjectPage"
+                    "route": "CategoriesObjectPage"
                   }
                 }
               },
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
-                    "type": "ResponsiveTable"
+                    "type": "GridTable"
+                  },
+                  "columns": {
+                    "DataField::icon": {
+                      "width": "5rem",
+                      "widthIncludingColumnHeader": true
+                    }
                   }
                 }
               }
             }
           }
         },
-        "PostsObjectPage": {
+        "CategoriesObjectPage": {
           "type": "Component",
-          "id": "PostsObjectPage",
+          "id": "CategoriesObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Posts"
+              "contextPath": "/Categories"
             }
           }
         }

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "cds run",
-    "watch-posts": "cds watch --open posts/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-posts": "cds watch --open posts/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-categories": "cds watch --open categories/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "dependencies": {
     "@cap-js/postgres": "^2.0.4",
@@ -15,6 +16,8 @@
     "@sap/ux-specification": "^1.136.2"
   },
   "sapux": [
-    "app/posts"
+    "app/posts",
+    "app/categories",
+    "app/categories"
   ]
 }
