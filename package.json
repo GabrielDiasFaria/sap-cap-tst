@@ -5,7 +5,10 @@
   "scripts": {
     "start": "cds run",
     "watch-posts": "cds watch --open posts/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-categories": "cds watch --open categories/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-categories": "cds watch --open categories/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-wallets": "cds watch --open wallets/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-moviments": "cds watch --open moviments/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-movements-types": "cds watch --open movements-types/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "dependencies": {
     "@cap-js/postgres": "^2.0.4",
@@ -13,11 +16,14 @@
   },
   "devDependencies": {
     "@sap/cds-dk": "^9.1.2",
-    "@sap/ux-specification": "^1.136.2"
+    "@sap/ux-specification": "^1.136.3"
   },
   "sapux": [
     "app/posts",
     "app/categories",
-    "app/categories"
+    "app/categories",
+    "app/wallets",
+    "app/moviments",
+    "app/movements-types"
   ]
 }
