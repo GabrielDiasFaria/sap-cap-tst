@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/finance/",
+        "uri": "/odata/v4/categories/",
         "type": "OData",
         "settings": {
           "annotations": [],
