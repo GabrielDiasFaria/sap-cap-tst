@@ -28,8 +28,7 @@
   ],
   "cds": {
   "requires": {
-    "auth": false,
-    "db": "postgres"
+    "auth": false
   }
 }
 }
