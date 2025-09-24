@@ -1,2 +1,2 @@
 const cds = require("@sap/cds");
-module.exports = cds.server; // obrigatório!
+cds.load("gen/").then(cds.server);
