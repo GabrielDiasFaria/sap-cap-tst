@@ -25,10 +25,5 @@
     "app/wallets",
     "app/moviments",
     "app/movements-types"
-  ],
-  "cds": {
-  "requires": {
-    "auth": false
-  }
-}
+  ]
 }
