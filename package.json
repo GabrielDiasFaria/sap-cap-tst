@@ -28,6 +28,9 @@
   ],
   "cds": {
   "requires": {
+    "auth": {
+      "kind": "dummy"
+    },
     "db": "postgres"
   }
 }
